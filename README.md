@@ -160,27 +160,27 @@ The project generated:
 
 ## Crop Stress Classification Map
 
-![Crop Stress Classification Map](Figures/Crop_Stress_Classification_Map_2025.png.png)
+<img src="Figures/Crop_Stress_Classification_Map_2025.png.png" width="800">
 
 
 ## Seasonal Vegetation Indices
 
-![Seasonal Vegetation Indices](Figures/Figure1_Seasonal_Vegetation_Indices.png)
+<img src="Figures/Figure1_Seasonal_Vegetation_Indices.png" width="800">
 
 
 ## Correlation Heatmap
 
-![Correlation Heatmap](Figures/Figure3_Correlation_Heatmap.png)
+<img src="Figures/Figure3_Correlation_Heatmap.png" width="800">
 
 
 ## Crop Stress Assessment
 
-![Crop Stress Assessment](Figures/Figure4_Crop_Stress_Assessment.png)
+<img src="Figures/Figure4_Crop_Stress_Assessment.png" width="800">
 
 
 ## Crop Stress Distribution
 
-![Crop Stress Distribution](Figures/Figure_Crop_Stress_Distribution.png)
+<img src="Figures/Figure_Crop_Stress_Distribution.png" width="800">
 
 # 📂 Repository Structure
 # 💻 Google Earth Engine Implementation
