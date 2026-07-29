@@ -156,31 +156,35 @@ The project generated:
 ✅ Statistical comparison of vegetation indices  
 
 ---
-# 📷 Figures
+## 📷 Figures
 
-## Crop Stress Classification Map
+### Crop Stress Classification Map
 
-<img src="Figures/Crop_Stress_Classification_Map_2025.png.png" width="800">
+![Crop Stress Classification Map](./Figures/Crop_Stress_Classification_Map_2025.png.png)
 
+---
 
-## Seasonal Vegetation Indices
+### Seasonal Vegetation Indices
 
-<img src="Figures/Figure1_Seasonal_Vegetation_Indices.png" width="800">
+![Seasonal Vegetation Indices](./Figures/Figure1_Seasonal_Vegetation_Indices.png)
 
+---
 
-## Correlation Heatmap
+### Correlation Heatmap
 
-<img src="Figures/Figure3_Correlation_Heatmap.png" width="800">
+![Correlation Heatmap](./Figures/Figure3_Correlation_Heatmap.png)
 
+---
 
-## Crop Stress Assessment
+### Crop Stress Assessment
 
-<img src="Figures/Figure4_Crop_Stress_Assessment.png" width="800">
+![Crop Stress Assessment](./Figures/Figure4_Crop_Stress_Assessment.png)
 
+---
 
-## Crop Stress Distribution
+### Crop Stress Distribution
 
-<img src="Figures/Figure_Crop_Stress_Distribution.png" width="800">
+![Crop Stress Distribution](./Figures/Figure_Crop_Stress_Distribution.png)
 
 # 📂 Repository Structure
 # 💻 Google Earth Engine Implementation
