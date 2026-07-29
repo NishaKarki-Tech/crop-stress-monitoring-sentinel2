@@ -1,90 +1,259 @@
-# Seasonal Vegetation Analysis of Changunarayan Municipality Using Sentinel-2 Imagery
+# 🌱 Monsoon Crop Stress Monitoring Using Sentinel-2 Remote Sensing
 
-## Project Overview
+## Multi-Index Assessment of Seasonal Vegetation Dynamics in Changunarayan Municipality, Nepal (2025)
 
-This project evaluates seasonal vegetation dynamics and crop stress in Changunarayan Municipality, Bhaktapur, Nepal, using Sentinel-2 Surface Reflectance imagery processed in Google Earth Engine (GEE). Multiple vegetation indices, including NDVI, GNDVI, NDRE, and SAVI, were calculated for four seasons of 2025 to assess vegetation health.
-
-A threshold-based crop stress classification was developed using monsoon NDVI values to identify healthy vegetation, moderate stress, and high stress areas. The final crop stress map was designed in ArcGIS Pro, and summary statistics were analyzed using Python.
-
-This project demonstrates a complete remote sensing workflow for agricultural monitoring, integrating cloud-based satellite processing, GIS visualization, and data analysis.
+**Author:** Nisha Karki  
+**Year:** 2026  
 
 ---
 
-## Objectives
+## 📌 Project Overview
 
-- Analyze seasonal vegetation dynamics using Sentinel-2 imagery.
-- Calculate NDVI, GNDVI, NDRE, and SAVI for four seasons.
-- Classify crop stress during the monsoon season.
-- Quantify healthy and stressed vegetation areas.
-- Produce GIS-ready maps and summary statistics.
+Agricultural productivity is strongly influenced by seasonal environmental changes, especially during the monsoon period when excessive rainfall, cloud cover, and water stress can affect crop growth.
 
----
+This project evaluates seasonal vegetation dynamics and crop stress conditions in **Changunarayan Municipality, Nepal** using **Sentinel-2 multispectral satellite imagery** and remote sensing-based vegetation indices.
 
-## Study Area
-
-- **Location:** Changunarayan Municipality, Bhaktapur District, Nepal
-- **Satellite:** Sentinel-2 Surface Reflectance (2025)
-- **Spatial Resolution:** 10 m
+The study integrates multiple vegetation indices to assess crop health, identify stressed areas, and develop a spatial crop condition classification map.
 
 ---
 
-## Software and Tools
+# 🎯 Objectives
+
+The main objectives of this study were:
+
+- To analyze seasonal vegetation dynamics using Sentinel-2 imagery.
+- To calculate vegetation indices for crop health assessment.
+- To evaluate monsoon crop stress conditions.
+- To classify crop areas based on vegetation response.
+- To generate spatial crop stress maps using Google Earth Engine.
+- To develop a reproducible remote sensing workflow for agricultural monitoring.
+
+---
+
+# 📍 Study Area
+
+**Location:** Changunarayan Municipality, Bhaktapur, Nepal  
+
+The study area represents an agricultural landscape with mixed cropping systems, including seasonal crops influenced by monsoon rainfall patterns.
+
+---
+
+# 🛰️ Data Sources
+
+## Satellite Data
+
+**Sentinel-2 MSI Surface Reflectance**
+
+- Spatial Resolution: 10–20 m
+- Data Provider: Copernicus Sentinel Program
+- Platform: Google Earth Engine
+
+## Additional Data
+
+- Municipal boundary shapefile
+- Field-based agricultural information
+- Remote sensing-derived vegetation metrics
+
+---
+
+# 🛠️ Software and Tools
+
+| Tool | Purpose |
+|---|---|
+| Google Earth Engine | Satellite image processing and index calculation |
+| Sentinel-2 MSI | Multispectral satellite data |
+| Python | Data analysis and visualization |
+| Google Colab | Computational environment |
+| ArcGIS Pro | Spatial visualization and mapping |
+| GitHub | Project documentation and sharing |
+
+---
+
+# 🌿 Methodology Workflow
+---
+
+# 📊 Vegetation Indices Used
+
+## 1. NDVI (Normalized Difference Vegetation Index)
+
+Used to assess overall vegetation vigor and biomass condition.
+
+Formula:
+
+NDVI = (NIR - Red) / (NIR + Red)
+
+
+---
+
+## 2. GNDVI (Green Normalized Difference Vegetation Index)
+
+Sensitive to chlorophyll variation and vegetation nitrogen status.
+
+Formula:
+
+GNDVI = (NIR - Green) / (NIR + Green)
+
+
+---
+
+## 3. NDRE (Normalized Difference Red Edge Index)
+
+Used for detecting crop stress and chlorophyll changes.
+
+Formula:
+
+NDRE = (NIR - Red Edge) / (NIR + Red Edge)
+
+
+---
+
+## 4. SAVI (Soil Adjusted Vegetation Index)
+
+Applied to reduce soil background influence.
+
+Formula:
+
+SAVI = ((NIR - Red) / (NIR + Red + L)) × (1 + L)
+
+where L represents soil adjustment factor.
+
+---
+
+# 📈 Seasonal Analysis
+
+Vegetation response was evaluated across different agricultural seasons:
+
+| Season | Description |
+|---|---|
+| Winter | Baseline vegetation condition |
+| Pre-monsoon | Vegetation development before rainfall |
+| Monsoon | Peak crop growth and stress assessment |
+
+---
+
+# 🌧️ Monsoon Crop Stress Assessment
+
+A threshold-based classification approach was applied to categorize vegetation condition.
+
+Classes included:
+
+| Class | Interpretation |
+|---|---|
+| Healthy Vegetation | High vegetation activity |
+| Moderate Stress | Reduced vegetation response |
+| High Stress | Low vegetation activity |
+
+---
+
+# 🗺️ Results and Outputs
+
+The project generated:
+
+✅ Seasonal vegetation index maps  
+✅ Crop stress classification map  
+✅ Spatial distribution of crop conditions  
+✅ GeoTIFF output for GIS analysis  
+✅ Statistical comparison of vegetation indices  
+
+---
+
+# 📷 Figures
+
+## Crop Stress Classification Map
+
+![Crop Stress Classification Map](Figures/Crop_Stress_Classification_Map_2025.png)
+
+
+## Seasonal Vegetation Indices
+
+![Seasonal Vegetation Indices](Figures/Figure1_Seasonal_Vegetation_Indices.png)
+
+
+## Correlation Analysis
+
+![Correlation Heatmap](Figures/Figure3_Correlation_Heatmap.png)
+
+
+## Crop Stress Assessment
+
+![Crop Stress Assessment](Figures/Figure4_Crop_Stress_Assessment.png)
+
+
+## Crop Stress Distribution
+
+![Crop Stress Distribution](Figures/Figure_Crop_Stress_Distribution.png)
+
+---
+
+# 📂 Repository Structure
+# 💻 Google Earth Engine Implementation
+
+The complete Sentinel-2 preprocessing and vegetation index calculation workflow was developed in Google Earth Engine.
+
+The script includes:
+
+- Sentinel-2 image filtering
+- Cloud masking
+- Seasonal compositing
+- Vegetation index calculation
+- Crop stress classification
+- Map export
+
+GEE scripts are available in:
+# 🔬 Key Findings
+
+- Sentinel-2 vegetation indices successfully captured seasonal crop variability.
+- NDVI, GNDVI, NDRE, and SAVI provided complementary information for crop condition assessment.
+- Monsoon conditions showed spatial variation in vegetation stress patterns.
+- Remote sensing-based monitoring can support rapid agricultural assessment.
+
+---
+
+# 🌱 Applications
+
+This workflow can support:
+
+- Precision agriculture
+- Crop monitoring
+- Early stress detection
+- Agricultural decision-making
+- Climate-resilient farming practices
+
+---
+
+# 🚀 Future Improvements
+
+Future work can include:
+
+- Integration of crop type classification models
+- Machine learning-based stress prediction
+- UAV-based validation
+- Field-level crop yield analysis
+- Multi-year monitoring
+
+---
+
+# 📚 Skills Demonstrated
 
 - Google Earth Engine
-- ArcGIS Pro
-- Python
-- Sentinel-2 Surface Reflectance Imagery
+- Sentinel-2 Remote Sensing
+- Vegetation Index Analysis
+- GIS Mapping
+- Agricultural Monitoring
+- Spatial Data Processing
+- Precision Agriculture Applications
 
 ---
 
-## Methodology
+# 📜 License
 
-1. Import study area boundary.
-2. Acquire Sentinel-2 imagery.
-3. Apply cloud masking.
-4. Generate seasonal composites.
-5. Calculate NDVI, GNDVI, NDRE, and SAVI.
-6. Compute seasonal statistics.
-7. Classify crop stress using NDVI thresholds.
-8. Create the final crop stress map in ArcGIS Pro.
+This project is created for academic and research purposes.
 
 ---
 
-## Results
+# 📬 Contact
 
-### Seasonal Vegetation Statistics
+**Nisha Karki**  
+Research Assistant | Remote Sensing & Precision Agriculture Enthusiast
 
-See:
-
-- `data/Seasonal_Vegetation_Indices_2025.csv`
-
-### Crop Stress Assessment
-
-| Crop Condition | Area (ha) | Percentage (%) |
-|---------------|----------:|---------------:|
-| Healthy | 4610.11 | 73.22 |
-| Moderate Stress | 867.84 | 13.78 |
-| High Stress | 818.15 | 13.00 |
-
----
-
-## Repository Structure
-
-```text
-GEE/
-Figures/
-Maps/
-data/
-README.md
-```
-
----
-
-## Author
-
-**Nisha Karki**
-
-Research interests:
-- Precision Agriculture
-- Remote Sensing
-- GIS
+GitHub: https://github.com/NishaKarki-Tech
