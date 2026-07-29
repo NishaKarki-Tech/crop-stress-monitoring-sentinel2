@@ -184,7 +184,7 @@ The project generated:
 
 ### Crop Stress Distribution
 
-![Crop Stress Distribution](./Figures/Figure_Crop_Stress_Distribution.png)
+![Crop Stress Distribution](./Figures/Figure_Crop_Stress_Distribution.png.png)
 
 # 📂 Repository Structure
 # 💻 Google Earth Engine Implementation
